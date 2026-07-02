@@ -38,6 +38,22 @@
                         Console.WriteLine("Успвшно добавен нов запис!");
                         Console.WriteLine();
                         break;
+
+                    case "2":
+                        Console.WriteLine("--- Списък с хора ---");
+                        if(people.Count == 0)
+                        {
+                            Console.WriteLine("Списък е празен (няма списък във файла)");
+                        }
+                        else
+                        {
+                            foreach (Person p in people)
+                            {
+                                Console.WriteLine(p);
+                            }
+                        }
+                        Console.WriteLine();
+                        break ;
                 }
                 
             }
